@@ -134,6 +134,15 @@ public class BtActivity extends AppCompatActivity {
             }
         });
 
+        buttonProceedDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Move to dashboard page
+                Intent intent = new Intent(BtActivity.this, Dashboard.class);
+                startActivity(intent);
+            }
+        });
+
         // Button to ON/OFF LED on Arduino Board
         buttonToggle.setOnClickListener(new View.OnClickListener() {
             @Override
