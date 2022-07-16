@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Electric Vehicle Monitor</string>
+    <string name="BtConnInstr">Please make sure that the Bluetooth is already enabled and the EV device is already paired up to this phone. Then tap the CONNECT button. Once you have successfully connected to correct device, test it using the button below. If not, tap RE-CONNECT button and try again.</string>
 </resources>

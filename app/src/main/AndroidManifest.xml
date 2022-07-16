@@ -3,19 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.batterymonitor">
 
+
+    <!--Permissions for Bluetooth access-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
+
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BatteryMonitor"
-        tools:targetApi="31">
+        tools:targetApi="29">
         <activity
-            android:name=".DataPage"
-            android:label="DataPage"
+            android:name=".SelectDeviceActivity"
+            android:label="Select Bluetooth Device"/>
+        <activity
+            android:name=".BtActivity"
+            android:label="Bluetooth Connection Page"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
